@@ -10,14 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8162321574854854ca0ddd6bd6962433, type: 3}
-  m_Name: WD_Spread
+  m_Name: WD_Ban3Vien
   m_EditorClassIdentifier: 
-  weaponName: 
+  weaponName: "B\u1EAFn 3 vi\xEAn"
   icon: {fileID: 0}
   damage:
   - 8
+  - 10
+  - 12
+  - 14
+  - 16
   cooldown:
   - 1.2
-  projectileCount: 03000000
+  - 1.1
+  - 1
+  - 0.9
+  - 0.8
+  projectileCount: 0300000003000000040000000400000005000000
   range: 8
   projectilePrefab: {fileID: 447106685654319192, guid: 11f13ebc314a9b94391549b043c1b1ef, type: 3}

@@ -10,14 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8162321574854854ca0ddd6bd6962433, type: 3}
-  m_Name: WD_Aura
+  m_Name: WD_HaoQuang
   m_EditorClassIdentifier: 
-  weaponName: 
+  weaponName: "H\xE0o Quang"
   icon: {fileID: 0}
   damage:
   - 5
+  - 7
+  - 9
+  - 11
+  - 13
   cooldown:
   - 0.5
-  projectileCount: 01000000
+  - 0.45
+  - 0.4
+  - 0.35
+  - 0.3
+  projectileCount: 0100000001000000010000000100000001000000
   range: 2.5
   projectilePrefab: {fileID: 0}
