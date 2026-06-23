@@ -5,20 +5,27 @@ public class Health : MonoBehaviour
 {
     [SerializeField] private float maxHealth = 30f;
     private float current;
+    private bool isDead;
 
-    public event Action OnDeath;            // Observer: nơi khác lắng nghe
-    public event Action<float> OnDamaged;   // truyền % máu còn lại
+    public event Action OnDeath;
+    public event Action<float> OnDamaged;
 
-    void OnEnable() => current = maxHealth;
+    void OnEnable()   // chạy mỗi khi object bật lên (kể cả khi lấy từ pool)
+    {
+        current = maxHealth;
+        isDead = false;
+    }
 
     public void TakeDamage(float amount)
     {
+        if (isDead) return;          // tránh "chết 2 lần"
         current -= amount;
         OnDamaged?.Invoke(current / maxHealth);
+
         if (current <= 0f)
         {
-            OnDeath?.Invoke();
-            Destroy(gameObject); 
+            isDead = true;
+            OnDeath?.Invoke();       // CHỈ báo tin — KHÔNG Destroy nữa
         }
     }
 }

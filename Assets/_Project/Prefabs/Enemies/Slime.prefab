@@ -15,8 +15,14 @@ GameObject:
   - component: {fileID: 7283742437713905943}
   - component: {fileID: -5119633017983632994}
   - component: {fileID: 8000489139970827688}
+  - component: {fileID: 2246436308677644100}
+  - component: {fileID: 308867464739357230}
+  - component: {fileID: -7155785577008546019}
+  - component: {fileID: -4373110597472820173}
+  - component: {fileID: 6740907284560262109}
+  - component: {fileID: -4325038001451121602}
   m_Layer: 7
-  m_Name: Enemy
+  m_Name: Slime
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -209,3 +215,78 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damagePerHit: 5
   damageInterval: 0.5
+--- !u!114 &2246436308677644100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690079405647876014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cefdb4ed7ea94d4da998d64a4728d8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &308867464739357230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690079405647876014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a569fc7ec47f942a2df34cf4f78896, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-7155785577008546019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690079405647876014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371b18a9b66b8c34cb640942ac47ee77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gemPrefab: {fileID: 262787224702176246, guid: 8ec6d07180c83af4c837110708bbe798, type: 3}
+--- !u!114 &-4373110597472820173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690079405647876014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de6272daba0009419ad26c24ff56773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6740907284560262109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690079405647876014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca4edb51d62365418034290ee28ce00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashColor: {r: 1, g: 1, b: 1, a: 1}
+  duration: 0.08
+--- !u!114 &-4325038001451121602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690079405647876014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95992d49f4ebec245bc4d1c606e94873, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

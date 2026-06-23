@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25f60778eb2a2fd45b9e2a8dcff051c8, type: 3}
+  m_Name: Wave_Level1
+  m_EditorClassIdentifier: 
+  entries:
+  - label: "M\u1EDF m\xE0n - slime"
+    startTime: 0
+    endTime: 9999
+    enemyPrefab: {fileID: 690079405647876014, guid: b14e45a581861c04889f5c5675bd6cc6, type: 3}
+    spawnInterval: 1.5
+    countPerSpawn: 1
+    announce: 0
+    announceText: 
+  - label: "Ph\xFAt 1 - slime d\xE0y"
+    startTime: 60
+    endTime: 9999
+    enemyPrefab: {fileID: 690079405647876014, guid: b14e45a581861c04889f5c5675bd6cc6, type: 3}
+    spawnInterval: 0.8
+    countPerSpawn: 2
+    announce: 0
+    announceText: 
+  - label: "Ph\xFAt 1 - runner"
+    startTime: 60
+    endTime: 9999
+    enemyPrefab: {fileID: 690079405647876014, guid: 0b54c1e2847a43d4083ff0d149847f38, type: 3}
+    spawnInterval: 2
+    countPerSpawn: 1
+    announce: 0
+    announceText: 
+  - label: "Ph\xFAt 3 - tank"
+    startTime: 180
+    endTime: 9999
+    enemyPrefab: {fileID: 690079405647876014, guid: bda2e3f3b1bf8f046854e8565a77290b, type: 3}
+    spawnInterval: 6
+    countPerSpawn: 1
+    announce: 0
+    announceText: 
+  - label: "Ph\xFAt 5 - \u0111\u1EE3t l\u1EDBn"
+    startTime: 300
+    endTime: 320
+    enemyPrefab: {fileID: 690079405647876014, guid: b14e45a581861c04889f5c5675bd6cc6, type: 3}
+    spawnInterval: 0.15
+    countPerSpawn: 5
+    announce: 1
+    announceText: ZOMBIES INCOMING
