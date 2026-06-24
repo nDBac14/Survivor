@@ -4,7 +4,11 @@
 public class WeaponData : ScriptableObject
 {
     public string weaponName;
-    public Sprite icon;                  // để hiện trong màn chọn skill (Phase 6)
+    public Sprite icon;                  // để hiện trong màn chọn skill 
+
+    [Header("Tiến hóa")]
+    public GameObject evolvedWeaponPrefab;  // prefab vũ khí sau khi tiến hóa
+    public PassiveData requiredPassive;     // passive cần để mở khóa tiến hóa
 
     [Header("Chỉ số theo cấp (phần tử 0 = cấp 1)")]
     public float[] damage = { 10f };

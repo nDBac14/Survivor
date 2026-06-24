@@ -4,7 +4,7 @@ public class AuraWeapon : WeaponBase
 {
     protected override void Attack()
     {
-        float dmg = data.DamageAt(level);
+        float dmg = CurrentDamage;
         float rangeSqr = data.range * data.range;
         var enemies = EnemyRegistry.All;
 

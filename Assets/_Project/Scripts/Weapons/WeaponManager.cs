@@ -22,6 +22,11 @@ public class WeaponManager : MonoBehaviour
         activeWeapons.Add(weapon);
         return weapon;
     }
+    public void RemoveWeapon(WeaponBase weapon)
+    {
+        activeWeapons.Remove(weapon);
+        Destroy(weapon.gameObject);
+    }
 
     public bool HasWeapon(WeaponData data) => activeWeapons.Exists(w => w.Data == data);
     public WeaponBase GetWeapon(WeaponData data) => activeWeapons.Find(w => w.Data == data);

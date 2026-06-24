@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6614367270246448815}
   - component: {fileID: 5747489227703699044}
   m_Layer: 0
-  m_Name: 'Weapon_Aura '
+  m_Name: Weapon_HaoQuang
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

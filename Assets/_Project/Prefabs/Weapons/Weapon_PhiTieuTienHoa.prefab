@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5127196316431799899}
   - component: {fileID: 932946972251592093}
   m_Layer: 0
-  m_Name: 'Weapon_Kunai '
+  m_Name: Weapon_PhiTieuTienHoa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23d18483c9466754e97eb512c705da13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: 467cc1c8150fb294aa739c3b11c8407f, type: 2}
+  data: {fileID: 11400000, guid: 7d2d3a5938e748843b5be2f55ab40a2e, type: 2}

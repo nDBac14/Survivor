@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: "Phi Ti\xEAu"
   icon: {fileID: 0}
+  evolvedWeaponPrefab: {fileID: 1404064116715303437, guid: 0688ec0bc3d205c4bba83757005b5caa, type: 3}
+  requiredPassive: {fileID: 11400000, guid: 2b7f82dd1cde2ea40bbd3ac61e755404, type: 2}
   damage:
   - 10
   - 13

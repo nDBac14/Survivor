@@ -4,6 +4,8 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
 
+    private PlayerStats stats;
+
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private Vector2 moveInput;
@@ -12,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        stats = GetComponent<PlayerStats>();
     }
 
     void Update()
@@ -28,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);
+        float speed = moveSpeed * (stats != null ? stats.Get(StatType.MoveSpeed) : 1f);
+        rb.MovePosition(rb.position + moveInput * speed * Time.fixedDeltaTime);
     }
 }
