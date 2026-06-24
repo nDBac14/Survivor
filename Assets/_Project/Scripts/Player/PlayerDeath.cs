@@ -1,15 +1,13 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(Health))]
 public class PlayerDeath : MonoBehaviour
 {
-    void Awake()
-    {
-        GetComponent<Health>().OnDeath += HandleDeath;
-    }
+    private Health health;
+    void Awake() => health = GetComponent<Health>();
 
-    private void HandleDeath()
-    {
-        Debug.Log("GAME OVER");
-        Time.timeScale = 0f;   // dừng toàn bộ game
-    }
+    void OnEnable() => health.OnDeath += Die;
+    void OnDisable() => health.OnDeath -= Die;
+
+    private void Die() => GameEvents.RaisePlayerDied();
 }

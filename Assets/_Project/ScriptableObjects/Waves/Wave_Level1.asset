@@ -21,6 +21,7 @@ MonoBehaviour:
     countPerSpawn: 1
     announce: 0
     announceText: 
+    oneShot: 0
   - label: "Ph\xFAt 1 - slime d\xE0y"
     startTime: 60
     endTime: 9999
@@ -29,6 +30,7 @@ MonoBehaviour:
     countPerSpawn: 2
     announce: 0
     announceText: 
+    oneShot: 0
   - label: "Ph\xFAt 1 - runner"
     startTime: 60
     endTime: 9999
@@ -37,6 +39,7 @@ MonoBehaviour:
     countPerSpawn: 1
     announce: 0
     announceText: 
+    oneShot: 0
   - label: "Ph\xFAt 3 - tank"
     startTime: 180
     endTime: 9999
@@ -45,6 +48,7 @@ MonoBehaviour:
     countPerSpawn: 1
     announce: 0
     announceText: 
+    oneShot: 0
   - label: "Ph\xFAt 5 - \u0111\u1EE3t l\u1EDBn"
     startTime: 300
     endTime: 320
@@ -53,3 +57,13 @@ MonoBehaviour:
     countPerSpawn: 5
     announce: 1
     announceText: ZOMBIES INCOMING
+    oneShot: 0
+  - label: "Ph\xFAt 5 - \u0111\u1EE3t l\u1EDBn"
+    startTime: 300
+    endTime: 320
+    enemyPrefab: {fileID: 690079405647876014, guid: b14e45a581861c04889f5c5675bd6cc6, type: 3}
+    spawnInterval: 0.15
+    countPerSpawn: 5
+    announce: 1
+    announceText: ZOMBIES INCOMING
+    oneShot: 0

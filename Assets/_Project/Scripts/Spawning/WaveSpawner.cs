@@ -11,12 +11,14 @@ public class WaveSpawner : MonoBehaviour
     private float elapsed;
     private float[] timers;       // đếm ngược tới lần spawn kế cho mỗi entry
     private bool[] announced;     // mỗi entry chỉ cảnh báo 1 lần
+    private bool[] oneShotDone;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         timers = new float[waveData.entries.Count];
         announced = new bool[waveData.entries.Count];
+        oneShotDone = new bool[waveData.entries.Count];
     }
 
     void Update()
@@ -30,6 +32,7 @@ public class WaveSpawner : MonoBehaviour
             // ngoài khung thời gian của entry này thì bỏ qua
             if (elapsed < e.startTime || elapsed > e.endTime) continue;
 
+            if (e.oneShot && oneShotDone[i]) continue;
             // cảnh báo 1 lần khi entry bắt đầu
             if (e.announce && !announced[i])
             {
@@ -43,6 +46,7 @@ public class WaveSpawner : MonoBehaviour
                 for (int n = 0; n < e.countPerSpawn; n++)
                     SpawnAround(e.enemyPrefab);
                 timers[i] = e.spawnInterval;
+                if (e.oneShot) oneShotDone[i] = true;
             }
         }
     }

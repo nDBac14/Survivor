@@ -4,25 +4,28 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] private float maxHealth = 30f;
-    private float current;
+    private float currentHealth;
     private bool isDead;
 
     public event Action OnDeath;
     public event Action<float> OnDamaged;
 
+    public float CurrentHealth => currentHealth;
+    public float MaxHealth => maxHealth;
+
     void OnEnable()   // chạy mỗi khi object bật lên (kể cả khi lấy từ pool)
     {
-        current = maxHealth;
+        currentHealth = maxHealth;
         isDead = false;
     }
 
     public void TakeDamage(float amount)
     {
         if (isDead) return;          // tránh "chết 2 lần"
-        current -= amount;
-        OnDamaged?.Invoke(current / maxHealth);
+        currentHealth -= amount;
+        OnDamaged?.Invoke(currentHealth / maxHealth);
 
-        if (current <= 0f)
+        if (currentHealth <= 0f)
         {
             isDead = true;
             OnDeath?.Invoke();       // CHỈ báo tin — KHÔNG Destroy nữa

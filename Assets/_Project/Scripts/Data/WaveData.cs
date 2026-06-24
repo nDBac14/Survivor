@@ -17,6 +17,8 @@ public class WaveData : ScriptableObject
         [Header("Cảnh báo")]
         public bool announce;             // có hiện chữ cảnh báo không
         public string announceText = "ZOMBIES INCOMING";
+
+        public bool oneShot;   // chỉ spawn đúng 1 lần (dùng cho boss)
     }
 
     public List<SpawnEntry> entries = new List<SpawnEntry>();
