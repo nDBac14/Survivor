@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4860556845233937895}
   - component: {fileID: -3531098533605088425}
   - component: {fileID: 5132882031900847818}
+  - component: {fileID: -4037642610703953473}
+  - component: {fileID: -7776809004321629962}
   m_Layer: 7
   m_Name: Tank
   m_TagString: Enemy
@@ -290,3 +292,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95992d49f4ebec245bc4d1c606e94873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-4037642610703953473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690079405647876014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d481a71052452e41a15fb1c24e96b4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popupPrefab: {fileID: 690079405647876014}
+--- !u!114 &-7776809004321629962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690079405647876014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0d4e3bdcf174444a6773d43791aaec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathVfxPrefab: {fileID: 7635478028577904644, guid: 22e78e6ed520fe843aab40aee00451bd, type: 3}
+  deathSound: {fileID: 0}

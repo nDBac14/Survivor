@@ -78,7 +78,8 @@ public class BossController : MonoBehaviour
         if (DistanceToPlayer() <= attackRange &&
             Player.TryGetComponent<Health>(out var hp))
             hp.TakeDamage(attackDamage);
-        // (thêm hiệu ứng đập / spawn đạn ở Phase 11)
+        if (ScreenShake.Instance) 
+            ScreenShake.Instance.Shake(0.4f);
     }
 
     private void CheckEnrage(float pct)

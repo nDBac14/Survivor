@@ -9,5 +9,9 @@ public class PlayerDeath : MonoBehaviour
     void OnEnable() => health.OnDeath += Die;
     void OnDisable() => health.OnDeath -= Die;
 
-    private void Die() => GameEvents.RaisePlayerDied();
+    private void Die()
+    {
+        GameEvents.RaisePlayerDied();
+        if (ScreenShake.Instance) ScreenShake.Instance.Shake(0.8f);
+    }
 }

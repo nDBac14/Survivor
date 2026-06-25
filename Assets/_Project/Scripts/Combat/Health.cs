@@ -9,6 +9,7 @@ public class Health : MonoBehaviour
 
     public event Action OnDeath;
     public event Action<float> OnDamaged;
+    public event Action<float> OnHit;
 
     public float CurrentHealth => currentHealth;
     public float MaxHealth => maxHealth;
@@ -23,6 +24,7 @@ public class Health : MonoBehaviour
     {
         if (isDead) return;          // tránh "chết 2 lần"
         currentHealth -= amount;
+        OnHit?.Invoke(amount);
         OnDamaged?.Invoke(currentHealth / maxHealth);
 
         if (currentHealth <= 0f)
