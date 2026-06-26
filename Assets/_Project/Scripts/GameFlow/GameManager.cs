@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject menuPanel;
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private GameObject gameOverPanel;
-    [SerializeField] private GameObject hudPanel;   // UI khi chơi (Phase 10 sẽ làm đầy)
+    [SerializeField] private GameObject hudPanel; 
 
     private StateMachine sm;
 
